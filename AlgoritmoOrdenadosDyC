@@ -1,13 +1,12 @@
 def Ordenado(S):
     L=len(S)
-    if L==1:                        #Caso Base 1: S está ordenado porque tiene 1 elem.
+    if L==0:                        #Caso Base 2: S está ordenado porque tiene 1 elem.
+        return True
+    if L==1:                        #Caso Base 2: S está ordenado porque tiene 1 elem.
         return True
     else:
-        if L==2:                    #Caso Base 2: S está ordenado porque S[0] < S[1] y tiene 2 elem.
-            if S[0]<S[1]:           
-                return True
-            else:                   #Si no, S[0]>S[1], no está ordenado.
-                return False
+        if L==2:                    #Caso Base 3: S está ordenado porque S[0] < S[1] y tiene 2 elem.
+            return S[0]<S[1]           
         else:                       #Subproblema: S tiene más de 2 elem.
             M=L//2
             R1=Ordenado(S[0:M])
