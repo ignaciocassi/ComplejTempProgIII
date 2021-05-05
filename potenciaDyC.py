@@ -1,3 +1,4 @@
+#Cálculo de la potencia. Calcular a^n cuando n es potencia de 2
 def calcularPotencia(a,n):
     if n==2:
         b=a
