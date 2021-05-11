@@ -13,5 +13,9 @@ def monedasGreedy(v):
         return n                      #Devuelvo n, (cantidad de monedas utilizadas)
     else:                             #Sino, si me quede sin monedas, no tiene solución.
         return None                                  
-    
-print(monedasGreedy(177))
+
+def __main__():
+    print(monedasGreedy(177))
+
+if __name__=="__main__":
+    __main__()
